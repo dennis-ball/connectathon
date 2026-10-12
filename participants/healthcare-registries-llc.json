@@ -13,7 +13,7 @@
       "role": "verifier",
       "name": "Co-Management App check-in",
       "description": "Eye care co-management EHR check-in page. Runs the connectathon requests (records, insurance card, PHQ-2) through web wallets, the phone's wallet, or a QR code to a phone.",
-      "status": "not-yet",
+      "status": "up",
       "url": "https://comanage.healthcareregistries.com/smart_checkin/demo"
     }
   ]
