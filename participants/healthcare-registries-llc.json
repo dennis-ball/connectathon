@@ -3,6 +3,11 @@
   "homepage": "https://healthcareregistries.com",
   "contacts": [
     {
+      "name": "Dennis Ball",
+      "github": "dennis-ball",
+      "email": "dennisball@healthcareregistries.com"
+    },
+    {
       "name": "Dr. Jim Grue",
       "email": "jimgrue@healthcareregistries.com"
     }
@@ -11,10 +16,20 @@
     {
       "id": "comanage-checkin",
       "role": "verifier",
-      "name": "Co-Management App check-in",
-      "description": "Eye care co-management EHR check-in page. Runs the connectathon requests (records, insurance card, PHQ-2) through web wallets, the phone's wallet, or a QR code to a phone.",
+      "name": "Comanage check-in",
+      "description": "Comanage, the Universal Co-Management App, connects optometrists and ophthalmologists who co-manage eye care patients. Its check-in asks the patient's health app for demographics, the insurance card, problems, allergies, medications, immunizations, recent labs and vitals, and FHIR Questionnaires (PHQ-2, GAD-7, the SPEED dry eye score, and a contact lens trial evaluation), and staff review each item before it is filed to the chart.",
       "status": "up",
-      "url": "https://comanage.healthcareregistries.com/smart_checkin/demo"
+      "url": "https://comanage.healthcareregistries.com/smart_checkin/demo",
+      "notes": "Public test page: no sign-in, synthetic patients only, nothing is saved. Pick any connectathon request from the menu (the minimum scenarios, the form scenarios, US Core, labs and vitals, no selector, unknown selector, a SMART Health Card, and the insurance card), then share from a registry web wallet, the phone's own wallet, a QR code to another phone, or any web wallet by URL. The review shows each item's status and the records received, and the captured request and response can be downloaded for result reports."
+    },
+    {
+      "id": "comanage-kiosk",
+      "role": "verifier",
+      "name": "Comanage kiosk check-in",
+      "description": "An unattended waiting-room kiosk with no wallet of its own: it shows a QR code, the patient shares from the health app on their phone, and the screen confirms what was shared, then clears for the next patient.",
+      "status": "up",
+      "url": "https://comanage.healthcareregistries.com/smart_checkin/kiosk",
+      "notes": "Public, no sign-in, nothing is saved. The front desk can ask for records and PHQ-2, records only, or PHQ-2 only. A collapsed section has the request and response JSON for result reports."
     }
   ]
 }
